@@ -36,7 +36,9 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
             //'knowledge',          ซ่อนตัวโชว์ หน้าแต่มีเนื้อหาข้างใน
 
-            ['class' => 'yii\grid\ActionColumn'],
-        ],
-    ]); ?>
+            ['class' => 'yii\grid\ActionColumn','template'=>'{view}'],   //ให้มันโชว์แค่ตา(การค้นหา) ถ้าเอาออกให้หมกให้ปิดด้วย //ซะ
+
+
+          ]
+    ]) ?>
 </div>

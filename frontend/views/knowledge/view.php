@@ -17,12 +17,12 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>
         <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->id], [
+        <?= Html::a('Deleteลบไฟล์', ['delete', 'id' => $model->id], [
             'class' => 'btn btn-danger',
             'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
-                'method' => 'post',
-            ],
+                'confirm' => 'คุณแน่ใจหรือยังว่าจะลบมันหายไปเลยนะ',
+               'method' => 'post',
+           ],
         ]) ?>
         <p><a class="btn btn-lg btn-success" href="http://192.168.1.18/entranetcpk/frontend/web/index.php?r=knowledge%2Findex ">กลับไปยังการค้นหา</a></p>
     </p>
@@ -52,5 +52,5 @@ $this->params['breadcrumbs'][] = $this->title;
             ]
         ],
     ]) ?>
-    
+
 </div>

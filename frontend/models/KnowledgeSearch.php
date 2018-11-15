@@ -59,9 +59,9 @@ class KnowledgeSearch extends Knowledge
         }
 
         // แก้ไขตรงนี้
-        $query->andFilterWhere([
-            'id' => $this->id,
-       ]);
+        //$query->andFilterWhere([
+          //  'id' => $this->id,
+      // ]);
 
         $query->orFilterWhere(['like', 'name', $this->globalSearch])
             ->orFilterWhere(['like', 'knowledge', $this->globalSearch]);
